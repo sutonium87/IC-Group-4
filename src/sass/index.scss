@@ -1,2 +1,10 @@
-@import './common';
-@import './example';
+@use "../sass/modal.scss";
+@use "../sass/moblie.scss";
+@use "../sass/hero-header.scss";
+@use "../sass/products";
+@use "../sass/about";
+@use "../sass/advantages.scss";
+@use "../sass/gallery.scss";
+@use "../sass/customer-reviews.scss";
+@use "../sass/contacts.scss";
+@use "../sass/footer";
