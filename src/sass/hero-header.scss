@@ -29,6 +29,11 @@ $color1: #d41443;
 
 .header__logo {
   padding: 37px 0 0 16px;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: translateX(50);
+  }
 }
 
 .menu__item {
@@ -179,11 +184,22 @@ $color1: #d41443;
   position: absolute;
   top: 152px;
   left: 1112px;
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 .svg-right__23 {
   position: absolute;
   top: 244px;
   left: 1092px;
+
+  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    transform: rotate(360deg);
+  }
 }
 
 .milk-pic {
@@ -212,7 +228,6 @@ $color1: #d41443;
     transform: rotateX(720deg);
   }
   100% {
-    /* animate nothing to pause animation at the end */
     opacity: 1;
     transform: rotateX(720deg);
   }
