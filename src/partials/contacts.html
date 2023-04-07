@@ -2,6 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>title</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
   </head>
   <body>
     <section class="contacts">
@@ -123,7 +127,11 @@
         </article>
       </div>
       <div class="contacts__buttons-container">
-        <button type="submit" class="contacts__button">
+        <button
+          class="contacts__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <span>Our Locations</span>
           <svg width="10px" height="10px" fill="#fff">
             <use href="./images/icons.svg#icon-vector"></use>
