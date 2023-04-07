@@ -1,137 +1,139 @@
 <!-- <h1>hero-header</h1> -->
+<section class="hero-header">
+  <div class="container-width">
+    <!-- Header section -->
 
-<section class="container-width">
-  <!-- Header section -->
+    <div class="header">
+      <div class="header__logo">
+        <a href="">
+          <svg width="199" height="50">
+            <use href="images/hero-header/icons.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
 
-  <div class="header">
-    <div class="header__logo">
-      <a href="">
-        <svg width="199" height="50">
-          <use href="images/hero-header/icons.svg#logo"></use>
-        </svg>
-      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--active" href="">Home</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="">About us</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="">How it’s made?</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Our products</a>
+          </li>
+          <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="button">
+        <button type="button" class="button__buy">
+          Buy now
+          <svg class="button__svg" width="4" height="8">
+            <use href="images/hero-header/icons.svg#Vector-1"></use>
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a class="menu__link menu__link--active" href="">Home</a>
-        </li>
-        <li class="menu__item"><a class="menu__link" href="">About us</a></li>
-        <li class="menu__item">
-          <a class="menu__link" href="">How it’s made?</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="">Our products</a>
-        </li>
-        <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- Hero Section -->
+    <div class="hero">
+      <h1 class="hero-title">
+        ice cream <br />made with<br />
+        <span class="hero-title__passion">passion</span>
+      </h1>
 
-    <div class="button">
-      <button type="button" class="button__buy">
-        Buy now
-        <svg class="button__svg" width="4" height="8">
-          <use href="images/hero-header/icons.svg#Vector-1"></use>
-        </svg>
-      </button>
+      <div class="hero-btn">
+        <button class="hero-btn__products" type="button">Products</button>
+        <button class="hero-btn__products--made" type="button">
+          How it’s made?
+        </button>
+      </div>
+
+      <svg class="hero__svg-right-16" width="72" height="77">
+        <use href="images/hero-header/icons.svg#Group-22"></use>
+      </svg>
+      <svg class="hero__svg-right-23" width="92" height="76">
+        <use href="images/hero-header/icons.svg#Group-23"></use>
+      </svg>
+
+      <svg class="hero__elipse-svg" width="534" height="534">
+        <use href="images/hero-header/icons.svg#Ellipse-3"></use>
+      </svg>
+
+      <picture class="hero__milk-pic">
+        <source
+          media="screen and (min-width: 1280px)"
+          srcset="
+            images/hero-header/milk-D.png    1x,
+            images/hero-header/milk-D-x2.png 2x
+          "
+        />
+        <img
+          width="213"
+          height="216"
+          src="images/hero-header/milk-D.png"
+          alt="IceCream"
+        />
+      </picture>
+
+      <div class="hero-bio-eco">
+        <p class="hero-bio-eco__text">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipiscing elit,<br />
+          sed do eiusmod tempor<br />
+          incididunt ut labore et
+        </p>
+        <picture class="hero-bio-eco__arrow-right">
+          <source
+            media="screen and (min-width: 1280px)"
+            srcset="
+              images/hero-header/arrow-right-D.png    1x,
+              images/hero-header/arrow-right-D-x2.png 2x
+            "
+          />
+          <img
+            width="26"
+            height="26"
+            src="images/hero-header/arrow-right-D.png"
+            alt="IceCream"
+          />
+        </picture>
+      </div>
+
+      <picture class="hero__icecream-pic">
+        <source
+          media="screen and (min-width: 1280px)"
+          srcset="
+            images/hero-header/ice-cream-D.png    1x,
+            images/hero-header/ice-cream-D-x2.png 2x
+          "
+        />
+        <img
+          width="236"
+          height="557"
+          src="images/hero-header/ice-cream-D.png"
+          alt="IceCream"
+        />
+      </picture>
+
+      <picture class="hero__girl-icecream">
+        <source
+          media="screen and (min-width: 1280px)"
+          srcset="
+            images/hero-header/girl-icecream-D.png    1x,
+            images/hero-header/girl-icecream-D-x2.png 2x
+          "
+        />
+        <img
+          width="304"
+          height="241"
+          src="images/hero-header/girl-icecream-D.png"
+          alt="IceCream"
+        />
+      </picture>
     </div>
   </div>
-
-  <!-- Hero Section -->
-
-  <h1 class="hero-title">
-    ice cream <br />made with<br />
-    <span class="hero-title__passion">passion</span>
-  </h1>
-
-  <div class="hero-btn">
-    <button class="hero-btn__products" type="button">Products</button>
-    <button class="hero-btn__products--made" type="button">
-      How it’s made?
-    </button>
-  </div>
-
-  <svg class="svg-right-16" width="72" height="77">
-    <use href="images/hero-header/icons.svg#Group-22"></use>
-  </svg>
-  <svg class="svg-right-23" width="92" height="76">
-    <use href="images/hero-header/icons.svg#Group-23"></use>
-  </svg>
-
-  <svg class="elipse-svg" width="534" height="534">
-    <use href="images/hero-header/icons.svg#Ellipse-3"></use>
-  </svg>
-
-  <picture class="milk-pic">
-    <source
-      media="screen and (min-width: 1280px)"
-      srcset="
-        images/hero-header/milk-D.png    1x,
-        images/hero-header/milk-D-x2.png 2x
-      "
-    />
-    <img
-      width="213"
-      height="216"
-      src="images/hero-header/milk-D.png"
-      alt="IceCream"
-    />
-  </picture>
-
-  <div class="hero-bio-eco">
-    <p class="hero-bio-eco__text">
-      Lorem ipsum dolor sit amet,<br />
-      consectetur adipiscing elit,<br />
-      sed do eiusmod tempor<br />
-      incididunt ut labore et
-    </p>
-    <picture class="hero-bio-eco__arrow-right">
-      <source
-        media="screen and (min-width: 1280px)"
-        srcset="
-          images/hero-header/arrow-right-D.png    1x,
-          images/hero-header/arrow-right-D-x2.png 2x
-        "
-      />
-      <img
-        width="26"
-        height="26"
-        src="images/hero-header/arrow-right-D.png"
-        alt="IceCream"
-      />
-    </picture>
-  </div>
-
-  <picture class="icecream-pic">
-    <source
-      media="screen and (min-width: 1280px)"
-      srcset="
-        images/hero-header/ice-cream-D.png    1x,
-        images/hero-header/ice-cream-D-x2.png 2x
-      "
-    />
-    <img
-      width="236"
-      height="557"
-      src="images/hero-header/ice-cream-D.png"
-      alt="IceCream"
-    />
-  </picture>
-
-  <picture class="girl-icecream">
-    <source
-      media="screen and (min-width: 1280px)"
-      srcset="
-        images/hero-header/girl-icecream-D.png    1x,
-        images/hero-header/girl-icecream-D-x2.png 2x
-      "
-    />
-    <img
-      width="304"
-      height="241"
-      src="images/hero-header/girl-icecream-D.png"
-      alt="IceCream"
-    />
-  </picture>
 </section>
