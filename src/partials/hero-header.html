@@ -65,18 +65,21 @@
 
       <picture class="hero__milk-pic">
         <source
-          media="screen and (min-width: 1280px)"
+          media="screen and (min-width: 1200px)"
           srcset="
             images/hero-header/milk-D.png    1x,
             images/hero-header/milk-D-x2.png 2x
           "
         />
-        <img
-          width="213"
-          height="216"
-          src="images/hero-header/milk-D.png"
-          alt="IceCream"
+        <source
+          media="screen and (min-width: 768px)"
+          srcset="
+            images/hero-header/milk-T.png    1x,
+            images/hero-header/milk-T-x2.png 2x
+          "
         />
+
+        <img src="images/hero-header/milk-T.png" alt="IceCream milk" />
       </picture>
 
       <div class="hero-bio-eco">
