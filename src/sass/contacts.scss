@@ -73,9 +73,11 @@
     color: var(--color3);
     border-radius: 6px;
     background: var(--color4);
+    width: 75.1px;
 
     &--modifier {
       background: var(--color10);
+      width: 165px;
     }
   }
 
@@ -178,6 +180,7 @@
     &__container {
       min-width: 224px;
       font-size: 14px;
+      padding: 40px 32px 0px 32px;
     }
 
     &__receptive {

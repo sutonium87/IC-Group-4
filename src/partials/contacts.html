@@ -6,8 +6,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Contacts Section -->
+
     <section class="contacts">
       <div class="contacts__cards-container">
         <article class="contacts__container contacts__receptive">
@@ -127,20 +133,13 @@
         </article>
       </div>
       <div class="contacts__buttons-container">
-        <button
-          class="contacts__button menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+        <button data-modal-open class="contacts__button">
           <span>Our Locations</span>
           <svg width="10px" height="10px" fill="#fff">
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
-        <button
-          type="submit"
-          class="contacts__button contacts__button--franchise"
-        >
+        <button class="contacts__button contacts__button--franchise">
           <span>Franchise</span>
           <svg width="12px" height="10px">
             <use href="./images/icons.svg#icon-vector-red"></use>
