@@ -1,0 +1,46 @@
+.about{
+    background-color: #FFF5F6;
+    background-image: url(/src/images/milk-desktop.png);
+    background-repeat: no-repeat;
+    height: 1229px;
+    .about__motto {
+        color:#FFA5BA;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        padding-top: 60px;
+    } 
+    .about__title{
+        text-transform: uppercase;
+        color:#D41443;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        padding-top:16px;
+    }
+}
+
+.about__main-content{
+    display: flex;
+    gap:99px;
+    padding-top: 60px;
+}
+
+.about__main-img-content {
+    background-image: url(/src/images/home-pic4\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about__main-details-first-text{
+    margin-bottom: 32px;
+}
+
+.about__main-details-second-text{
+    margin-bottom: 32px;
+}
