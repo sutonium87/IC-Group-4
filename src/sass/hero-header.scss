@@ -166,6 +166,10 @@ $color2: #ecebeb;
     padding: 0;
     border-width: 0;
   }
+  &__products:hover {
+    background: $text-color-white;
+    color: $color1;
+  }
   &__products--made {
     @extend .hero-btn__products;
     width: 138px;
