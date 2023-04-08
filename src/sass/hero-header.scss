@@ -3,17 +3,17 @@ $text-color-white: #ffffff;
 $color1: #d41443;
 $color2: #ecebeb;
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
+// * {
+//   margin: 0px;
+//   padding: 0px;
+// }
 
 %hero-title-styles {
   font-family: 'Titan One';
   font-style: normal;
   font-weight: 400;
-  font-size: 38px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $text-color-white;
@@ -29,9 +29,9 @@ $color2: #ecebeb;
   margin: 0px auto;
   // width: 1200px;
   width: 100%;
-  height: 664px;
+  height: 502px;
   // height: 100vh;
-  // position: relative;
+  position: relative;
 }
 
 // Header: Logo + Menu + Buy Button
@@ -39,7 +39,7 @@ $color2: #ecebeb;
   display: flex;
 
   &__logo {
-    padding: 37px 0 0 16px;
+    padding: 8px 0 0 20px;
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__logo:hover {
@@ -48,47 +48,12 @@ $color2: #ecebeb;
 }
 
 .menu {
-  &__item {
-    list-style: none;
-  }
-
-  &__link {
-    text-decoration: none;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    color: $text-color-white;
-  }
-
-  &__link:hover {
-    color: $color1;
-    cursor: pointer;
-  }
-
-  &__link--active {
-    @extend .menu__link;
-    color: $color1;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-    padding: 52px 141px 0px 128px;
-    align-items: center;
-    margin: 0px;
-
-    position: relative;
-    z-index: 2;
-  }
+  display: none;
 }
 
 .button {
   padding-top: 40px;
+  display: none;
 
   &__buy {
     width: 159px;
@@ -126,9 +91,11 @@ $color2: #ecebeb;
 .hero-title {
   @extend %hero-title-styles;
 
+  position: relative;
+  z-index: 1;
   width: 300px;
-  padding: 60px 0 24px 16px;
-  margin: 0px;
+  padding: 79px 0 20px 20px;
+  // margin: 0px;
   transition: color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
@@ -141,8 +108,8 @@ $color2: #ecebeb;
   &__passion {
     @extend %hero-title-styles;
 
-    font-size: 58px;
-    line-height: 53px;
+    font-size: 48px;
+    line-height: 46px;
     color: $color1;
     transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -150,20 +117,22 @@ $color2: #ecebeb;
 
 .hero-btn {
   display: flex;
-  gap: 12px;
-  padding-left: 16px;
+  gap: 8px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
 
   &__products {
-    width: 107px;
-    height: 40px;
+    width: 62.4px;
+    height: 24px;
     background: $color1;
     border-radius: 20px;
 
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 8px;
+    line-height: 10px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -179,8 +148,8 @@ $color2: #ecebeb;
   }
   &__products--made {
     @extend .hero-btn__products;
-    width: 138px;
-    height: 40px;
+    width: 82.8px;
+    height: 24px;
     background: $text-color-white;
     color: $color1;
   }
@@ -193,13 +162,17 @@ $color2: #ecebeb;
 .hero {
   &__elipse-svg {
     position: absolute;
-    left: 517px;
-    top: 54px;
+    width: 346px;
+    height: 344px;
+    left: 36px;
+    top: 83px;
     display: flex;
     z-index: 0;
+    overflow: hidden;
   }
 
   &__svg-right-16 {
+    display: none;
     position: absolute;
     top: 152px;
     left: 1112px;
@@ -211,6 +184,7 @@ $color2: #ecebeb;
   }
 
   &__svg-right-23 {
+    display: none;
     position: absolute;
     top: 244px;
     left: 1092px;
@@ -222,6 +196,7 @@ $color2: #ecebeb;
   }
 
   &__milk-pic {
+    display: none;
     position: absolute;
     left: 16px;
     top: 388px;
@@ -229,11 +204,12 @@ $color2: #ecebeb;
 
   &__icecream-pic {
     position: absolute;
-    left: 636px;
-    top: 108px;
+    left: 117px;
+    top: 92px;
   }
 
   &__girl-icecream {
+    display: none;
     position: absolute;
     left: 880px;
     top: 423px;
@@ -252,7 +228,12 @@ $color2: #ecebeb;
   left: 229px;
   top: 97px;
 
+  &__arrow-right {
+    display: none;
+  }
+
   &__text {
+    display: none;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -288,8 +269,10 @@ $color2: #ecebeb;
   .menu {
     display: none;
   }
+
   .button {
     padding-top: 32px;
+    display: block;
     &__buy {
       width: 160px;
       position: fixed;
@@ -321,9 +304,47 @@ $color2: #ecebeb;
       width: 82.8px;
     }
   }
-  .hero__milk-pic {
-    left: 32px;
-    top: 246px;
+
+  .hero {
+    &__svg-right-16 {
+      // width: 43px;
+      // height: 44px;
+      display: block;
+      left: 693px;
+      top: 92px;
+    }
+    &__svg-right-23 {
+      // width: 51px;
+      // height: 43px;
+      display: block;
+      left: 685px;
+      top: 152px;
+    }
+
+    &__milk-pic {
+      display: block;
+      left: 32px;
+      top: 246px;
+    }
+    &__elipse-svg {
+      width: 335px;
+      height: 333px;
+      left: 248px;
+      top: 43px;
+    }
+    &__icecream-pic {
+      width: 143px;
+      height: 336px;
+      left: 322px;
+      top: 80px;
+    }
+    &__girl-icecream {
+      display: block;
+      width: 190px;
+      height: 150px;
+      left: 546px;
+      top: 265px;
+    }
   }
 
   .hero-bio-eco {
@@ -332,21 +353,63 @@ $color2: #ecebeb;
     left: 184px;
     top: 282px;
     &__text {
+      display: block;
       font-size: 8px;
       line-height: 12px;
+    }
+    &__arrow-right {
+      display: block;
     }
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container-width {
     height: 664px;
   }
   .header__logo {
     padding: 37px 0 0 16px;
   }
+
   .menu {
     display: block;
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: $text-color-white;
+    }
+
+    &__link:hover {
+      color: $color1;
+      cursor: pointer;
+    }
+
+    &__link--active {
+      @extend .menu__link;
+      color: $color1;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+      padding: 52px 141px 0px 128px;
+      align-items: center;
+      margin: 0px;
+
+      position: relative;
+      z-index: 2;
+    }
   }
   .button {
     padding-top: 40px;
@@ -380,11 +443,41 @@ $color2: #ecebeb;
       width: 138px;
     }
   }
-  .hero__milk-pic {
-    left: 16px;
-    top: 388px;
-    width: 213px;
-    height: 216px;
+
+  .hero {
+    &__svg-right-16 {
+      width: 72px;
+      height: 77px;
+      top: 152px;
+      left: 1112px;
+    }
+    &__svg-right-23 {
+      width: 92px;
+      height: 76px;
+      top: 244px;
+      left: 1092px;
+    }
+
+    &__milk-pic {
+      left: 16px;
+      top: 388px;
+      width: 213px;
+      height: 216px;
+    }
+    &__elipse-svg {
+      width: 534px;
+      height: 534px;
+      left: 517px;
+      top: 54px;
+    }
+    &__icecream-pic {
+      left: 636px;
+      top: 108px;
+    }
+    &__girl-icecream {
+      left: 880px;
+      top: 423px;
+    }
   }
 
   .hero-bio-eco {

@@ -7,7 +7,7 @@
       <div class="header__logo">
         <a href="">
           <svg width="199" height="50">
-            <use href="images/hero-header/icons.svg#logo"></use>
+            <use href="images/hero-header/hero-header.svg#logo"></use>
           </svg>
         </a>
       </div>
@@ -32,7 +32,7 @@
         <button type="button" class="button__buy">
           Buy now
           <svg class="button__svg" width="4" height="8">
-            <use href="images/hero-header/icons.svg#Vector-1"></use>
+            <use href="images/hero-header/hero-header.svg#Vector-1"></use>
           </svg>
         </button>
       </div>
@@ -52,25 +52,26 @@
         </button>
       </div>
 
-      <svg class="hero__svg-right-16" width="72" height="77">
-        <use href="images/hero-header/icons.svg#Group-22"></use>
+      <svg class="hero__svg-right-16" width="43" height="44">
+        <use href="images/hero-header/hero-header.svg#Group-22"></use>
       </svg>
-      <svg class="hero__svg-right-23" width="92" height="76">
-        <use href="images/hero-header/icons.svg#Group-23"></use>
+      <svg class="hero__svg-right-23" width="51" height="43">
+        <use href="images/hero-header/hero-header.svg#Group-23"></use>
       </svg>
 
-      <svg class="hero__elipse-svg" width="534" height="534">
-        <use href="images/hero-header/icons.svg#Ellipse-3"></use>
+      <svg class="hero__elipse-svg">
+        <use href="images/hero-header/hero-header.svg#Ellipse-3"></use>
       </svg>
 
       <picture class="hero__milk-pic">
         <source
-          media="screen and (min-width: 1200px)"
+          media="screen and (min-width: 1280px)"
           srcset="
             images/hero-header/milk-D.png    1x,
             images/hero-header/milk-D-x2.png 2x
           "
         />
+
         <source
           media="screen and (min-width: 768px)"
           srcset="
@@ -97,12 +98,15 @@
               images/hero-header/arrow-right-D-x2.png 2x
             "
           />
-          <img
-            width="26"
-            height="26"
-            src="images/hero-header/arrow-right-D.png"
-            alt="IceCream"
+
+          <source
+            media="screen and (min-width: 768px)"
+            srcset="
+              images/hero-header/arrow-right-T.png    1x,
+              images/hero-header/arrow-right-T-x2.png 2x
+            "
           />
+          <img src="images/hero-header/arrow-right-D.png" alt="IceCream" />
         </picture>
       </div>
 
@@ -114,12 +118,21 @@
             images/hero-header/ice-cream-D-x2.png 2x
           "
         />
-        <img
-          width="236"
-          height="557"
-          src="images/hero-header/ice-cream-D.png"
-          alt="IceCream"
+        <source
+          media="screen and (min-width: 768px)"
+          srcset="
+            images/hero-header/ice-cream-T.png    1x,
+            images/hero-header/ice-cream-T-x2.png 2x
+          "
         />
+        <source
+          media="screen and (max-width: 767px)"
+          srcset="
+            images/hero-header/ice-cream-M.png    1x,
+            images/hero-header/ice-cream-M-x2.png 2x
+          "
+        />
+        <img src="images/hero-header/ice-cream-D.png" alt="IceCream" />
       </picture>
 
       <picture class="hero__girl-icecream">
@@ -130,12 +143,14 @@
             images/hero-header/girl-icecream-D-x2.png 2x
           "
         />
-        <img
-          width="304"
-          height="241"
-          src="images/hero-header/girl-icecream-D.png"
-          alt="IceCream"
+        <source
+          media="screen and (min-width: 768px)"
+          srcset="
+            images/hero-header/girl-icecream-T.png    1x,
+            images/hero-header/girl-icecream-T-x2.png 2x
+          "
         />
+        <img src="images/hero-header/girl-icecream-D.png" alt="IceCream" />
       </picture>
     </div>
   </div>
