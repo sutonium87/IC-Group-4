@@ -29,9 +29,14 @@
 
     <div data-modal class="modal is-hidden">
       <div class="contacts__inner-div">
-        <button data-modal-close class="contacts__button-location">
-          Close
-        </button>
+        <div class="contacts__button-container">
+          <button data-modal-close class="contacts__button-close">
+            <svg class="contacts__svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
         <div class="contacts__map">
           <h2 class="contacts__title-map">See you in our location.</h2>
           <iframe
@@ -40,9 +45,9 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
+        <!-- <button class="contacts__button-map"></button> -->
       </div>
     </div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
