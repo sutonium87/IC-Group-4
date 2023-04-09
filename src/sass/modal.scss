@@ -23,6 +23,7 @@
   align-items: center;
   top: 0;
   left: 0;
+  transition: opacity 300ms ease-in-out;
 }
 
 .is-hidden {
