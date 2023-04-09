@@ -26,12 +26,20 @@ $color2: #ecebeb;
 // Section container
 
 .container-width {
-  margin: 0px auto;
-  // width: 1200px;
   width: 100%;
   height: 502px;
   // height: 100vh;
   position: relative;
+
+  background-image: url('../images/hero-header/Ellipse-M.png');
+  background-position: top 83px left 36px;
+  background-size: 346px 344px;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.container-center {
+  margin: 0 auto;
+  width: 320px;
 }
 
 // Header: Logo + Menu + Buy Button
@@ -51,6 +59,17 @@ $color2: #ecebeb;
   display: none;
 }
 
+.modal-open {
+  background-color: Transparent;
+  left: 280px;
+  top: 27px;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+}
+
 .button {
   padding-top: 40px;
   display: none;
@@ -58,6 +77,7 @@ $color2: #ecebeb;
   &__buy {
     width: 159px;
     height: 44px;
+    position: absolute;
 
     background: $text-color-white;
     border-radius: 22px;
@@ -160,16 +180,16 @@ $color2: #ecebeb;
 }
 
 .hero {
-  &__elipse-svg {
-    position: absolute;
-    width: 346px;
-    height: 344px;
-    left: 36px;
-    top: 83px;
-    display: flex;
-    z-index: 0;
-    overflow: hidden;
-  }
+  // &__elipse-svg {
+  //   position: absolute;
+  //   width: 346px;
+  //   height: 344px;
+  //   left: 36px;
+  //   top: 83px;
+  //   display: flex;
+  //   z-index: 0;
+  //   overflow: hidden;
+  // }
 
   &__svg-right-16 {
     display: none;
@@ -224,9 +244,9 @@ $color2: #ecebeb;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: relative;
-  left: 229px;
-  top: 97px;
+  // position: relative;
+  // left: 229px;
+  // top: 97px;
 
   &__arrow-right {
     display: none;
@@ -262,12 +282,23 @@ $color2: #ecebeb;
 @media screen and (min-width: 768px) {
   .container-width {
     height: 416px;
+    background-image: url('../images/hero-header/Ellipse-T.png');
+    background-position: top 43px left 248px;
+    background-size: 335px 333px;
   }
+  .container-center {
+    width: 768;
+  }
+
   .header__logo {
     padding: 32px 0 0 32px;
   }
   .menu {
     display: none;
+  }
+  .modal-open {
+    left: 524px;
+    top: 46px;
   }
 
   .button {
@@ -275,7 +306,6 @@ $color2: #ecebeb;
     display: block;
     &__buy {
       width: 160px;
-      position: fixed;
       left: 576px;
     }
   }
@@ -307,15 +337,11 @@ $color2: #ecebeb;
 
   .hero {
     &__svg-right-16 {
-      // width: 43px;
-      // height: 44px;
       display: block;
       left: 693px;
       top: 92px;
     }
     &__svg-right-23 {
-      // width: 51px;
-      // height: 43px;
       display: block;
       left: 685px;
       top: 152px;
@@ -326,12 +352,7 @@ $color2: #ecebeb;
       left: 32px;
       top: 246px;
     }
-    &__elipse-svg {
-      width: 335px;
-      height: 333px;
-      left: 248px;
-      top: 43px;
-    }
+
     &__icecream-pic {
       width: 143px;
       height: 336px;
@@ -348,7 +369,7 @@ $color2: #ecebeb;
   }
 
   .hero-bio-eco {
-    position: fixed;
+    position: absolute;
     gap: 7px;
     left: 184px;
     top: 282px;
@@ -363,10 +384,17 @@ $color2: #ecebeb;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .container-width {
     height: 664px;
+    background-image: url('../images/hero-header/Ellipse-D.png');
+    background-position: top 54px left 517px;
+    background-size: 534px 534px;
   }
+  .container-center {
+    width: 1200;
+  }
+
   .header__logo {
     padding: 37px 0 0 16px;
   }
@@ -411,6 +439,10 @@ $color2: #ecebeb;
       z-index: 2;
     }
   }
+  .modal-open {
+    display: none;
+  }
+
   .button {
     padding-top: 40px;
     &__buy {
@@ -464,12 +496,7 @@ $color2: #ecebeb;
       width: 213px;
       height: 216px;
     }
-    &__elipse-svg {
-      width: 534px;
-      height: 534px;
-      left: 517px;
-      top: 54px;
-    }
+
     &__icecream-pic {
       left: 636px;
       top: 108px;
@@ -490,5 +517,29 @@ $color2: #ecebeb;
       font-size: 14px;
       line-height: 20px;
     }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .container-width {
+    background-image: url('../images/hero-header/Ellipse-M-x2.png');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .container-width {
+    background-image: url('../images/hero-header/Ellipse-T-x2.png');
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .container-width {
+    background-image: url('../images/hero-header/Ellipse-D-x2.png');
   }
 }
