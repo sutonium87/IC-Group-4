@@ -23,7 +23,7 @@
   align-items: center;
   top: 0;
   left: 0;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 1000ms ease-in-out;
 }
 
 .is-hidden {
@@ -68,7 +68,7 @@
     &:hover {
       fill: var(--color8);
       transition: var(--transition);
-      transition-duration: 250ms;
+      transition-duration: 1000ms;
     }
   }
 
@@ -79,7 +79,6 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 40px;
-
     width: 100%;
   }
 
