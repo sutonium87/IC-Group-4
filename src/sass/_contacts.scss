@@ -54,6 +54,13 @@
     min-width: 280px;
     padding: 40px 40px 0px 40px;
     font-size: 12px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 4px 4px 20px var(--color8);
+      cursor: pointer;
+    }
   }
 
   &__cards-container {
@@ -74,14 +81,17 @@
   }
 
   &__crawler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--color3);
     border-radius: 6px;
     background: var(--color4);
-    width: 75.1px;
+    width: 90.1px;
 
     &--modifier {
       background: var(--color10);
-      width: 165px;
+      width: 185px;
     }
   }
 
@@ -158,6 +168,13 @@
     cursor: pointer;
     text-align: center;
     color: var(--color3);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 4px 4px 20px var(--color8);
+      cursor: pointer;
+    }
   }
   &__button--franchise {
     background-color: var(--color3);

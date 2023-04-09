@@ -32,19 +32,20 @@
 
 .contacts {
   &__inner-div {
-    background: var(--color3);
+    background: rgba(255, 245, 246, 1);
     box-shadow: var(--color6);
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     position: relative;
-    width: 95%;
-    height: 75%;
+    width: 90%;
+    height: 85%;
   }
 
   &__button-container {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 45px;
   }
 
   &__button-close {
@@ -63,12 +64,22 @@
   &__svg {
     position: relative;
     left: 3.5px;
+    &:hover {
+      fill: var(--color8);
+      transition: var(--transition);
+      transition-duration: 250ms;
+    }
   }
+
+  // Our locations functionalities
 
   &__map {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
+
+    width: 100%;
   }
 
   &__title-map {
@@ -78,6 +89,25 @@
 
   &__map-dimension {
     width: 90%;
-    height: 300px;
+    height: 350px;
   }
+
+  &__button-reserved {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: var(--color6);
+    background: var(--color8);
+    color: var(--color3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 19px 10px 20px;
+    min-width: 320px;
+    max-width: 600px;
+  }
+
+  // Franchise functionalities
 }
