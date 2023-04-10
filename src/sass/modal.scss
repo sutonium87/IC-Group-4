@@ -110,4 +110,16 @@
   }
 
   // Franchise functionalities
+
+  &__inner-div-franchise {
+    background: rgba(255, 245, 246, 1);
+    box-shadow: var(--color6);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    height: 70%;
+  }
 }
