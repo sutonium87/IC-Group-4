@@ -15,20 +15,28 @@
       <nav class="menu">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link menu__link--active" href="">Home</a>
+            <a
+              class="menu__link menu__link--active"
+              href="./partials/hero-header.html"
+              >Home</a
+            >
           </li>
-          <li class="menu__item"><a class="menu__link" href="">About us</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="./partials/about.html">About us</a>
+          </li>
           <li class="menu__item">
             <a class="menu__link" href="">How it’s made?</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="">Our products</a>
+            <a class="menu__link" href="./partials/products.html"
+              >Our products</a
+            >
           </li>
           <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
         </ul>
       </nav>
-      <button class="modal-open js-open-menu">
-        <svg class="modal-open__svg" width="20" height="12">
+      <button class="menu-toggle js-open-menu">
+        <svg class="menu-toggle__svg" width="20" height="12">
           <use
             href="images/hero-header/hero-header-images.svg#modal-open-btn"
           ></use>
@@ -55,10 +63,14 @@
       </h1>
 
       <div class="hero-btn">
-        <button class="hero-btn__products" type="button">Products</button>
-        <button class="hero-btn__products--made" type="button">
-          How it’s made?
-        </button>
+        <a href="./partials/products.html"
+          ><button class="hero-btn__products" type="button">Products</button></a
+        >
+        <a href="./partials/about.html"
+          ><button class="hero-btn__products--made" type="button">
+            How it’s made?
+          </button></a
+        >
       </div>
 
       <svg class="hero__svg-right-16" width="43" height="44">
@@ -164,3 +176,72 @@
     </div>
   </div>
 </section>
+
+<!--Mobile Menu-->
+<!-- <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu">
+    <svg
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+
+  <div class="mobile-menu">
+    <ul class="mobile-menu-list">
+      <li class="list-styles">
+        <a class="mobile-menu__link link-text-decoration" href="">Studio</a>
+      </li>
+      <li class="list-styles">
+        <a class="mobile-menu__link link-text-decoration" href="">Portfolio</a>
+      </li>
+      <li class="list-styles">
+        <a class="mobile-menu__link link-text-decoration" href="">Contacts</a>
+      </li>
+    </ul>
+
+    <ul class="mobile-menu mobile-contact">
+      <li class="list-styles mobile-contact__list">
+        <a
+          class="mobile-contact__details-tel link-text-decoration"
+          href="tel:+1 212-772-4150"
+          >+1 212-772-4150</a
+        >
+      </li>
+
+      <li class="list-styles mobile-contact__list">
+        <a
+          class="mobile-contact__details-mail link-text-decoration"
+          href="mailto:info@devstudio.com"
+          >info@devstudio.com</a
+        >
+      </li>
+    </ul>
+
+    <ul class="mobile-menu mobile-media">
+      <li class="mobile-media__list list-styles">
+        <a class="mobile-media__link link-text-decoration" href="">Instagram</a>
+      </li>
+      <li class="list-styles"><span class="break"></span></li>
+      <li class="mobile-media__list list-styles">
+        <a class="mobile-media__link link-text-decoration" href="">Twitter</a>
+      </li>
+      <li class="list-styles"><span class="break"></span></li>
+      <li class="mobile-media__list list-styles">
+        <a class="mobile-media__link link-text-decoration" href="">Facebook</a>
+      </li>
+      <li class="list-styles"><span class="break"></span></li>
+      <li class="mobile-media__list list-styles">
+        <a class="mobile-media__link link-text-decoration" href="">Linkedin</a>
+      </li>
+    </ul>
+  </div>
+</div> -->
