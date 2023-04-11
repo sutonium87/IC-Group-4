@@ -1,12 +1,175 @@
+// styles for vars file
+:root {
+  --brand-color-red: #d41443;
+  --brand-color-pink: #fea5bb;
+  --brand-color-pink-label: #ffa5ba;
+  --brand-color-pink-background: #fff5f6;
+  --brand-color-pink-dark: #ffb8ca;
+  --brand-color-background: #e5e5e5;
+  --brand-color-gray: #907E82;
+  --brand-color-white: #fff;
+  --brand-color-black: #000;
+}
+// styles for vars file
+
+// styles for common file
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+body {
+  color: var(--brand-color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+}
+img {
+  display: block;
+}
+.container {
+  margin: 0px auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+}
+// styles for common file
+
+
+
+
 .advantages {
-    background-color: #FFF5F6;
-    
-    .advantages__list {
+  background-color: var(--brand-color-pink-background);
+  
+  .advantages__list {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
     padding-bottom: 209px;
+    padding: 90px 115px 0;
+    
+    .advantages__list-item {
+      position: relative;
+
+      .advantages__list-item-title {
+        display: flex;
+        align-items: center;
+        font-family: 'Titan One', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 66px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        color: var(--brand-color-red);
+        margin-bottom: 16px;
+
+        svg {
+          position: absolute;
+          top: -100px;
+          left: 6%;
+          transform: translateX(-50%);
+        }
+
+        h3 {
+          margin: 0;
+          padding-left: 10px;
+        }
+      }
+
+      .advantages__list-item-details {
+        font-family: 'DM Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 176%;
+        /* or 28px */
+        letter-spacing: 0.02em;
+        color: var(--brand-color-black);
+        margin-bottom: 209px;
+      }
     }
+  }
+}
+
+.advantages__list-item-third-svg{
+    stroke:  var(--brand-color-pink-label);
+    fill: none;
+}
+
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 320px) {
+  .advantages__list {
+    padding: 40px 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    .advantages__list-item {
+      width: 100%;
+      max-width: 280px;
+      padding-bottom: 40px;
+
+      .advantages__list-item-title {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        text-align: left;
+        margin-bottom: 8px;
+
+        svg {
+          position: static;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        h3 {
+          padding-left: 0;
+        }
+      }
+
+      .advantages__list-item-details {
+        margin-bottom: 0;
+        text-align: left;
+      }
     }
+  }
+}
+
+/* Stiluri pentru punctul de întrerupere de la 768px */
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    padding: 90px 115px 0;
+  }
+
+  .advantages__list-item {
+    .advantages__list-item-title {
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+}
+
+/* Stiluri pentru punctul de întrerupere de la 1200px */
+
+@media screen and (min-width: 1200px) {
+  .advantages__list {
+    padding: 140px 220px 0;
+  }
+
+  .advantages__list-item {
+    .advantages__list-item-title {
+      font-size: 72px;
+      line-height: 80px;
+    }
+  }
+}

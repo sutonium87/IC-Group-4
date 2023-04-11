@@ -1,10 +1,56 @@
+// styles for vars file
+:root {
+  --brand-color-red: #d41443;
+  --brand-color-pink: #fea5bb;
+  --brand-color-pink-label: #ffa5ba;
+  --brand-color-pink-background: #fff5f6;
+  --brand-color-pink-dark: #ffb8ca;
+  --brand-color-background: #e5e5e5;
+  --brand-color-gray: #907E82;
+  --brand-color-white: #fff;
+  --brand-color-black: #000;
+}
+// styles for vars file
+
+// styles for common file
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+body {
+  color: var(--brand-color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+}
+img {
+  display: block;
+}
+.container {
+  margin: 0px auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+}
+// styles for common file
+
+
+
 .about{
-    background-color: #FFF5F6;
-    background-image: url(/src/images/milk-desktop.png);
+    background-color: var(--brand-color-pink-background);
+    background-image: url(/src/images/About/milk-desktop.png);
     background-repeat: no-repeat;
-    height: 1229px;
-    .about__motto {
-        color:#FFA5BA;
+    background-size: cover;
+    
+
+    &__motto {
+        font-family: 'Titan One';
+        color:var(--brand-color-pink-label);
         text-transform: uppercase;
         font-weight: 400;
         font-size: 30px;
@@ -13,9 +59,10 @@
         letter-spacing: 0.04em;
         padding-top: 60px;
     } 
-    .about__title{
+    &__title{
+        font-family: 'Titan One';
         text-transform: uppercase;
-        color:#D41443;
+        color:var(--brand-color-red);
         font-weight: 400;
         font-size: 58px;
         line-height: 66px;
@@ -32,15 +79,164 @@
 }
 
 .about__main-img-content {
-    background-image: url(/src/images/home-pic4\ 1.png);
+    background-image: url(/src/images/About/home-pic41.png);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 81.41px
 }
 
-.about__main-details-first-text{
-    margin-bottom: 32px;
+.about__main-details-right{
+    /*clasa parinte */
+    & .about__main-details-first-text{
+        margin-bottom: 32px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 176%;
+        /* or 28px */
+        letter-spacing: 0.04em;
+        color: var(--brand-color-black);
+    }
+    & .about__main-details-second-text{
+        margin-bottom: 32px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 194%;
+        /* or 27px */
+        letter-spacing: 0.04em;
+        color: var(--brand-color-gray);
+    }
+    & .about__main-details-third-text{
+        margin-bottom: 32px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 194%;
+        /* or 27px */
+        letter-spacing: 0.04em;
+        color: var(--brand-color-gray);
+    }
+    & .about__main-button{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background: var(--brand-color-white);
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        border-radius: 22px;
+        border: 2px solid var(--brand-color-red);
+        width: 176px;
+        height: 44px;
+        color:var(--brand-color-red);
+        border:none;
+        
+    }
+        & .about__main-button-svg {
+            margin-left: 13.62px;
+            color:var(--brand-color-red);
+        }
+    }
+
+
+.about__main-button:hover {
+  background-color: #ECEBEB;
+  font-size: 1.2em;
+  border-radius: 22px;
+  cursor: pointer;
+  
 }
 
-.about__main-details-second-text{
-    margin-bottom: 32px;
-}
+
+
+
+/* Responsive Design */
+
+/*  320px */
+@media screen and (max-width: 320px) {
+    .about__motto {
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 60px;
+    }
+    .about__title {
+      font-size: 34px;
+      line-height: 39px;
+      padding-top: 16px;
+    }
+    .about__main-content {
+      flex-direction: column;
+      padding-top: 32px;
+    }
+    .about__main-img-left {
+      margin-bottom: 32px;
+    }
+    .about__main-img-content {
+      width: 100%;
+      height: auto;
+      margin-bottom: 32px;
+    }
+    .about__main-details-right {
+      margin-top: 32px;
+    }
+  }
+  
+  /* 320px - 768px */
+  @media screen and (min-width: 321px) and (max-width: 768px) {
+    .about__motto {
+      font-size: 26px;
+      line-height: 30px;
+      padding-top: 40px;
+    }
+    .about__title {
+      font-size: 48px;
+      line-height: 55px;
+      padding-top: 12px;
+    }
+    .about__main-content {
+      display:flex;
+      flex-direction:row;
+      padding-top: 60px;
+    }
+    .about__main-img-left {
+      margin-bottom: 32px;
+      width:50%;
+    }
+    .about__main-img-content {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 32px;
+    }
+    .about__main-details-right {
+      margin-top: 32px;
+      width:50%;
+    }
+  }
+  
+  /* Dimensiuni intre 769px si 1200px */
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    .about__main-content {
+      gap: 60px;
+    }
+  }
+  
+  /* Dimensiuni mai mari de 1200px */
+  
+// @media (min-width: 1201px) {
+//      .about__main-content {
+//      gap: 99px;
+//     }
+//   }
+  
+  
+  
+  
+  
+  
+  
