@@ -1,7 +1,46 @@
-$backgroud: #ffb8ca;
-$text-color-white: #ffffff;
-$color1: #d41443;
+// styles for vars file
+:root {
+  --brand-color-red: #d41443;
+  --brand-color-pink: #fea5bb;
+  --brand-color-pink-label: #ffa5ba;
+  --brand-color-pink-background: #fff5f6;
+  --brand-color-pink-dark: #ffb8ca;
+  --brand-color-background: #e5e5e5;
+  --brand-color-gray: #907e82;
+  --brand-color-white: #fff;
+  --brand-color-black: #000;
+}
+// styles for vars file
+
+// styles for common file
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+body {
+  color: var(--brand-color-gray);
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+}
+img {
+  display: block;
+}
+.container {
+  margin: 0px auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+}
+// styles for common file
+
 $color2: #ecebeb;
+$color3: #e17992;
 
 * {
   margin: 0px;
@@ -20,11 +59,11 @@ button {
   line-height: 30px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $text-color-white;
+  color: var(--brand-color-white);
 }
 
 .hero-header {
-  background: $backgroud;
+  background: var(--brand-color-pink-dark);
 }
 
 // Section container
@@ -68,8 +107,6 @@ button {
   left: 280px;
   top: 27px;
   position: absolute;
-  padding: 0;
-  margin: 0;
   border: 0;
   cursor: pointer;
 }
@@ -83,7 +120,7 @@ button {
     height: 44px;
     position: absolute;
 
-    background: $text-color-white;
+    background: var(--brand-color-white);
     border-radius: 22px;
 
     font-family: 'DM Sans';
@@ -94,7 +131,7 @@ button {
     display: flex;
     align-items: center;
     text-align: center;
-    color: $color1;
+    color: var(--brand-color-red);
 
     padding: 0px 0 0 37px;
     border-width: 0px;
@@ -111,6 +148,93 @@ button {
   }
 } // End of header section styles (logo + menu + button)
 
+//Modal Menu styles
+.nav-tools {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  pointer-events: none;
+  flex-direction: column;
+  padding-top: 60px;
+  height: 502px;
+  width: 250px;
+  background-color: $color3;
+  z-index: 50;
+  transform: translateX(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__close-button {
+    background-color: transparent;
+    border: none;
+    color: var(--brand-color-white);
+    position: relative;
+    top: -40px;
+    left: 100px;
+  }
+  &__button {
+    width: 186px;
+    height: 44px;
+
+    background: var(--brand-color-white);
+    border-radius: 22px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brand-color-red);
+
+    padding: 0px 0 0 50px;
+    border-width: 0px;
+
+    margin-left: 34px;
+    margin-bottom: 33px;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    @extend .nav-tools__button;
+    background-color: $color2;
+  }
+
+  &.is-open {
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 500;
+  }
+}
+
+.menu-nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding-left: 20px;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--brand-color-white);
+    cursor: pointer;
+  }
+  &__link:hover,
+  &__link:focus {
+    @extend .menu-nav__link;
+    color: var(--brand-color-red);
+  }
+}
+
 // Hero Section styles
 
 .hero-title {
@@ -124,11 +248,11 @@ button {
 
   &:hover,
   &:focus {
-    color: $color1;
+    color: var(--brand-color-red);
   }
   &:hover &__passion,
   &:focus &__passion {
-    color: $text-color-white;
+    color: var(--brand-color-white);
   }
 
   &__passion {
@@ -136,7 +260,7 @@ button {
 
     font-size: 48px;
     line-height: 46px;
-    color: $color1;
+    color: var(--brand-color-red);
     transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -151,7 +275,7 @@ button {
   &__products {
     width: 62.4px;
     height: 24px;
-    background: $color1;
+    background: var(--brand-color-red);
     border-radius: 20px;
 
     font-family: 'DM Sans';
@@ -162,7 +286,7 @@ button {
     display: flex;
     align-items: center;
     text-align: center;
-    color: $text-color-white;
+    color: var(--brand-color-white);
 
     justify-content: center;
     padding: 0;
@@ -170,15 +294,15 @@ button {
   }
   &__products:hover,
   &__products:focus {
-    background: $text-color-white;
-    color: $color1;
+    background: var(--brand-color-white);
+    color: var(--brand-color-red);
   }
   &__products--made {
     @extend .hero-btn__products;
     width: 82.8px;
     height: 24px;
-    background: $text-color-white;
-    color: $color1;
+    background: var(--brand-color-white);
+    color: var(--brand-color-red);
   }
 
   &__products--made:hover,
@@ -244,9 +368,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  // position: relative;
-  // left: 229px;
-  // top: 97px;
 
   &__arrow-right {
     display: none;
@@ -259,7 +380,7 @@ button {
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: $text-color-white;
+    color: var(--brand-color-white);
 
     animation: 3s anim-flipX ease infinite;
   }
@@ -289,8 +410,7 @@ button {
   .container-center {
     width: 768px;
   }
-
-  .header__logo {
+  * .header__logo {
     padding: 32px 0 0 32px;
   }
   .menu {
@@ -299,6 +419,11 @@ button {
   .menu-toggle {
     left: 524px;
     top: 46px;
+  }
+
+  .nav-tools {
+    width: 254px;
+    height: 416px;
   }
 
   .button {
@@ -414,18 +539,18 @@ button {
       line-height: 21px;
       display: flex;
       align-items: center;
-      color: $text-color-white;
+      color: var(--brand-color-white);
     }
 
     &__link:hover,
     &__link:focus {
-      color: $color1;
+      color: var(--brand-color-red);
       cursor: pointer;
     }
 
     &__link--active {
       @extend .menu__link;
-      color: $color1;
+      color: var(--brand-color-red);
     }
 
     &__list {
@@ -441,6 +566,10 @@ button {
     }
   }
   .menu-toggle {
+    display: none;
+  }
+
+  .nav-tools {
     display: none;
   }
 
@@ -548,94 +677,3 @@ button {
     background-image: url('../images/hero-header/Ellipse-D-x2.png');
   }
 }
-
-//Mobile Menu
-
-// .menu {
-//   display: flex;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// @media (max-width: 767px) {
-//   .menu {
-//     display: none;
-//   }
-// }
-
-// .menu .link {
-//   padding: 10px;
-//   color: inherit;
-//   text-decoration: none;
-// }
-
-// .menu .link:hover,
-// .menu .link:focus {
-//   text-decoration: underline;
-// }
-
-// .menu-toggle {
-//   min-height: 40px;
-//   min-width: 40px;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   margin: 0;
-//   padding: 0;
-//   background-color: transparent;
-//   cursor: pointer;
-//   border: none;
-//   border-radius: 50%;
-//   outline: none;
-// }
-
-// @media (min-width: 768px) {
-//   .menu-toggle {
-//     display: none;
-//   }
-// }
-
-// .menu-toggle:hover,
-// .menu-toggle:focus {
-//   background-color: rgba(0, 0, 0, 0.1);
-// }
-
-// .menu-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100vw;
-//   height: 100vh;
-//   padding: 32px;
-//   background-color: #3f51b5;
-//   z-index: 999;
-
-//   transform: translateX(100%);
-//   transition: transform 250ms ease-in-out;
-// }
-
-// .menu-container.is-open {
-//   transform: translateX(0);
-// }
-
-// .menu-container .menu-toggle {
-//   position: absolute;
-//   top: 16px;
-//   right: 16px;
-//   color: #fff;
-// }
-
-// .mobile-menu {
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// .mobile-menu .link {
-//   display: block;
-//   padding: 10px;
-//   color: #fff;
-//   text-decoration: none;
-// }
