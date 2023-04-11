@@ -42,7 +42,64 @@
             </svg>
           </button>
         </div>
-        <button class="contacts__button-reserved">Book a table</button>
+        <contacts__form
+          name="signup_contacts__form"
+          class="contacts__form-description"
+          autocomplete="on"
+        >
+          <div class="contacts__form-description__container">
+            <label class="contacts__form-description__sections">
+              Name
+              <input class="input" type="text" name="Name" />
+              <svg class="svg" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="contacts__form-description__container">
+            <label class="contacts__form-description__sections">
+              Telephone
+              <input class="input" type="tel" name="Telephone" />
+              <svg class="svg" width="13" height="13">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="contacts__form-description__container">
+            <label class="contacts__form-description__sections">
+              Email
+              <svg class="svg" width="15" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input class="input" type="email" name="Email" />
+            </label>
+          </div>
+          <label class="contacts__form-description__sections">
+            Comments
+            <textarea
+              class="contacts__form-description__comments"
+              name="feedback"
+              rows="5"
+              placeholder="Enter the text"
+            ></textarea>
+          </label>
+          <label class="contacts__form-description__sections">
+            <input type="checkbox" />
+            <svg class="contacts__form-svg-check" width="16" height="15">
+              <use href="./images/icons.svg#icon-check-mark"></use>
+            </svg>
+            <svg class="contacts__form-svg-confirmation" width="11" height="8">
+              <use href="./images/icons.svg#icon-check-mark"></use>
+            </svg>
+            <span class="agreement-text">
+              I agree with the letter and accept the
+              <span style="color: #2196f3; text-decoration: underline"
+                >Terms and Conditions</span
+              >
+            </span>
+          </label>
+          <button class="contacts__form-button-send" type="submit">Send</button>
+        </contacts__form>
       </div>
     </div>
 
