@@ -133,18 +133,22 @@ button {
 
     padding: 0px 0 0 37px;
     border-width: 0px;
+
+    transition: all 0.3s ease-in-out;
   }
 
   &__buy:hover,
   &__buy:focus {
     @extend .button__buy;
     background: var(--brand-color-ghost);
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px var(--brand-color-red);
   }
-
-  &__svg {
-    margin-left: 12px;
-  }
-} // End of header section styles (logo + menu + button)
+}
+.button-svg {
+  margin-left: 12px;
+}
+// End of header section styles (logo + menu + button)
 
 //Modal Menu styles
 .nav-tools {
@@ -235,34 +239,6 @@ button {
 
 // Hero Section styles
 
-.hero-title {
-  @extend %hero-title-styles;
-
-  position: relative;
-  z-index: 1;
-  width: 300px;
-  padding: 79px 0 20px 20px;
-  transition: color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    color: var(--brand-color-red);
-  }
-  &:hover &__passion,
-  &:focus &__passion {
-    color: var(--brand-color-white);
-  }
-
-  &__passion {
-    @extend %hero-title-styles;
-
-    font-size: 48px;
-    line-height: 46px;
-    color: var(--brand-color-red);
-    transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
 .hero-btn {
   display: flex;
   gap: 8px;
@@ -289,11 +265,16 @@ button {
     justify-content: center;
     padding: 0;
     border-width: 0;
+
+    transition: all 0.3s ease-in-out;
   }
   &__products:hover,
   &__products:focus {
     background: var(--brand-color-white);
     color: var(--brand-color-red);
+
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px var(--brand-color-red);
   }
   &__products--made {
     @extend .hero-btn__products;
@@ -310,6 +291,34 @@ button {
 }
 
 .hero {
+  &__title {
+    @extend %hero-title-styles;
+
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    padding: 79px 0 20px 20px;
+    transition: color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__title:hover,
+  &__title:focus {
+    color: var(--brand-color-red);
+  }
+  &__title:hover &__title--passion,
+  &__title:focus &__title--passion {
+    color: var(--brand-color-white);
+  }
+
+  &__title--passion {
+    @extend %hero-title-styles;
+
+    font-size: 48px;
+    line-height: 46px;
+    color: var(--brand-color-red);
+    transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   &__svg-right-16 {
     display: none;
     position: absolute;
@@ -320,7 +329,7 @@ button {
 
   &__svg-right-16:hover,
   &__svg-right-16:focus {
-    transform: rotate(360deg);
+    transform: rotate(45deg);
   }
 
   &__svg-right-23 {
@@ -333,7 +342,7 @@ button {
   }
   &__svg-right-23:hover,
   &__svg-right-23:focus {
-    transform: rotate(360deg);
+    transform: rotate(45deg);
   }
 
   &__milk-pic {
@@ -432,16 +441,6 @@ button {
       left: 576px;
     }
   }
-  .hero-title {
-    font-size: 22px;
-    line-height: 25px;
-    padding: 20px 0 20px 32px;
-
-    &__passion {
-      font-size: 34px;
-      line-height: 31px;
-    }
-  }
 
   .hero-btn {
     gap: 8px;
@@ -459,6 +458,17 @@ button {
   }
 
   .hero {
+    &__title {
+      font-size: 22px;
+      line-height: 25px;
+      padding: 20px 0 20px 32px;
+    }
+
+    &__title--passion {
+      font-size: 34px;
+      line-height: 31px;
+    }
+
     &__svg-right-16 {
       display: block;
       left: 693px;
@@ -578,16 +588,6 @@ button {
       left: 1025px;
     }
   }
-  .hero-title {
-    font-size: 38px;
-    line-height: 44px;
-    padding: 60px 0 24px 16px;
-
-    &__passion {
-      font-size: 58px;
-      line-height: 53px;
-    }
-  }
 
   .hero-btn {
     gap: 12px;
@@ -605,6 +605,17 @@ button {
   }
 
   .hero {
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+      padding: 60px 0 24px 16px;
+    }
+
+    &__title--passion {
+      font-size: 58px;
+      line-height: 53px;
+    }
+
     &__svg-right-16 {
       width: 72px;
       height: 77px;
@@ -635,7 +646,7 @@ button {
     }
     &__girl-icecream:hover,
     &__girl-icecream:focus {
-      transform: rotate(-360deg);
+      transform: scale(1.2);
     }
   }
 
