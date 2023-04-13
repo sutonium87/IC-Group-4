@@ -20,6 +20,7 @@
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+  text-decoration: none;
 }
 body {
   color: var(--brand-color-gray);
@@ -39,12 +40,6 @@ img {
   padding: 0 20px;
 }
 // styles for common file
-
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-}
 
 button {
   cursor: pointer;
