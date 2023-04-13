@@ -1,3 +1,17 @@
+:root {
+  --brand-color-background: #e1e1e1;
+  --brand-color-pink-background: #fff5f6;
+  --brand-color-white: #ffffff;
+  --brand-color-background3: #f0d1a5;
+  --brand-color-black: #000000;
+  --brand-color-pink-label: #ffa5ba;
+  --brand-color-gray: #907e82;
+  --brand-color-red: #d41443;
+  --brand-color-button: #ecebeb;
+  --brand-color-background2: #c2e297;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   font-weight: 500;
   letter-spacing: 0.04em;
