@@ -1,0 +1,681 @@
+button {
+  cursor: pointer;
+}
+%hero-title-styles {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: var(--brand-letter-spacing);
+  text-transform: uppercase;
+  color: var(--brand-color-white);
+}
+
+.hero-header {
+  background: var(--brand-color-pink-dark);
+
+  &__container {
+    width: 100%;
+    height: 502px;
+    position: relative;
+
+    background-image: url('../images/hero-header/Ellipse-M.png');
+    background-position: top 83px left 36px;
+    background-size: 346px 344px;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+}
+//
+// Section container
+
+// .container-center {
+//   margin: 0 auto;
+//   width: 320px;
+// }
+
+// Header: Logo + Menu + Buy Button
+.header {
+  display: flex;
+
+  &__logo {
+    padding: 8px 0 0 20px;
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__logo:hover,
+  &__logo:focus {
+    transform: translateX(60);
+  }
+}
+
+.menu {
+  // display: none;
+  visibility: hidden;
+}
+
+.menu-toggle {
+  background-color: Transparent;
+  left: 280px;
+  top: 27px;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+}
+
+.button {
+  padding-top: 40px;
+  display: none;
+
+  &__buy {
+    width: 159px;
+    height: 44px;
+    position: absolute;
+
+    background: var(--brand-color-white);
+    border-radius: 22px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: var(--brand-font-weight);
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brand-color-red);
+
+    padding: 0px 0 0 37px;
+    border-width: 0px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__buy:hover,
+  &__buy:focus {
+    @extend .button__buy;
+    background: var(--brand-color-ghost);
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px var(--brand-color-red);
+  }
+}
+.button-svg {
+  margin-left: 12px;
+}
+// End of header section styles (logo + menu + button)
+
+//Modal Menu styles
+.nav-tools {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  pointer-events: none;
+  flex-direction: column;
+  padding-top: 40px;
+  height: 100vh;
+  width: 250px;
+  background-color: #e17992;
+  z-index: 50;
+  transform: translateX(100%);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__close-button {
+    background-color: transparent;
+    border: none;
+    // color: var(--brand-color-white);
+    position: relative;
+    top: -20px;
+    left: 213px;
+    width: 14px;
+    height: 14px;
+  }
+
+  &__button {
+    width: 209px;
+    height: 44px;
+
+    background: var(--brand-color-white);
+    border-radius: 22px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: var(--brand-font-weight);
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brand-color-red);
+
+    padding: 0px 0 0 60px;
+    border-width: 0px;
+
+    margin-left: 20px;
+    margin-bottom: 19px;
+
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__button:hover,
+  &__button:focus {
+    @extend .nav-tools__button;
+    background-color: var(--brand-color-ghost);
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px var(--brand-color-red);
+  }
+
+  &.is-open {
+    pointer-events: auto;
+    transform: translateX(0);
+    z-index: 500;
+  }
+}
+
+.menu-nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding-left: 20px;
+    border: 1px solid #e18298;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: var(--brand-font-weight);
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--brand-color-white);
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+  }
+  &__link--active {
+    @extend .menu-nav__link;
+    color: var(--brand-color-red);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    @extend .menu-nav__link;
+    color: var(--brand-color-red);
+    transform: translateY(-5px);
+  }
+}
+
+// Hero Section styles
+
+.hero-btn {
+  display: flex;
+  gap: 8px;
+  padding-left: 20px;
+  position: relative;
+  z-index: 1;
+
+  &__products {
+    width: 62.4px;
+    height: 24px;
+    background: var(--brand-color-red);
+    border-radius: 20px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brand-color-white);
+
+    justify-content: center;
+    padding: 0;
+    border-width: 0;
+
+    transition: transform 0.3s ease-in-out;
+  }
+  &__products:hover,
+  &__products:focus {
+    background: var(--brand-color-white);
+    color: var(--brand-color-red);
+
+    transform: translateY(-10px);
+    box-shadow: 4px 4px 20px var(--brand-color-red);
+  }
+  &__products--made {
+    @extend .hero-btn__products;
+    width: 82.8px;
+    height: 24px;
+    background: var(--brand-color-white);
+    color: var(--brand-color-red);
+  }
+
+  &__products--made:hover,
+  &__products--made:focus {
+    background: var(--brand-color-ghost);
+  }
+}
+
+.hero {
+  &__title {
+    @extend %hero-title-styles;
+
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    padding: 79px 0 20px 20px;
+    transition: color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__title:hover,
+  &__title:focus {
+    color: var(--brand-color-red);
+  }
+  &__title:hover &__title--passion,
+  &__title:focus &__title--passion {
+    color: var(--brand-color-white);
+  }
+
+  &__title--passion {
+    @extend %hero-title-styles;
+
+    font-size: 48px;
+    line-height: 46px;
+    color: var(--brand-color-red);
+    transition: color 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__svg-right-16 {
+    display: none;
+    position: absolute;
+    top: 152px;
+    left: 1112px;
+    cursor: pointer;
+
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__svg-right-16:hover,
+  &__svg-right-16:focus {
+    transform: rotate(45deg);
+  }
+
+  &__svg-right-23 {
+    display: none;
+    position: absolute;
+    top: 244px;
+    left: 1092px;
+    cursor: pointer;
+
+    transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__svg-right-23:hover,
+  &__svg-right-23:focus {
+    transform: rotate(45deg);
+  }
+
+  &__milk-pic {
+    display: none;
+    position: absolute;
+    left: 16px;
+    top: 388px;
+    cursor: pointer;
+  }
+
+  &__icecream-pic {
+    position: absolute;
+    left: 117px;
+    top: 92px;
+  }
+
+  &__girl-icecream {
+    display: none;
+    position: absolute;
+    left: 880px;
+    top: 423px;
+    cursor: pointer;
+
+    transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__girl-icecream:hover,
+  &__girl-icecream:focus {
+    transform: scale(1.5);
+  }
+}
+
+.hero-bio-eco {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__arrow-right {
+    display: none;
+    cursor: pointer;
+  }
+
+  &__text {
+    display: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--brand-color-white);
+
+    animation: 3s anim-flipX ease infinite;
+  }
+  @keyframes anim-flipX {
+    0% {
+      opacity: 0;
+      transform: rotateX(90def);
+    }
+    50% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(720deg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header__container {
+    height: 416px;
+    background-image: url('../images/hero-header/Ellipse-T.png');
+    background-position: top 43px left 248px;
+    background-size: 335px 333px;
+  }
+  .container-center {
+    width: 768px;
+  }
+  * .header__logo {
+    padding: 32px 0 0 32px;
+  }
+  .menu {
+    // display: none;
+    visibility: hidden;
+  }
+  .menu-toggle {
+    left: 524px;
+    top: 46px;
+  }
+
+  .nav-tools {
+    width: 254px;
+
+    &__close-button {
+      left: 205px;
+    }
+
+    &__button {
+      width: 186px;
+      padding-left: 50px;
+      margin-left: 34px;
+    }
+  }
+
+  .button {
+    padding-top: 32px;
+    display: block;
+    &__buy {
+      width: 160px;
+      left: 576px;
+    }
+  }
+
+  .hero-btn {
+    gap: 8px;
+    padding-left: 32px;
+
+    &__products {
+      width: 62.4px;
+      height: 24px;
+      font-size: 8px;
+      line-height: 10px;
+    }
+    &__products--made {
+      width: 82.8px;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 22px;
+      line-height: 25px;
+      padding: 20px 0 20px 32px;
+    }
+
+    &__title--passion {
+      font-size: 34px;
+      line-height: 31px;
+    }
+
+    &__svg-right-16 {
+      display: block;
+      left: 693px;
+      top: 92px;
+    }
+    &__svg-right-23 {
+      display: block;
+      left: 685px;
+      top: 152px;
+    }
+
+    &__milk-pic {
+      display: block;
+      left: 32px;
+      top: 246px;
+    }
+
+    &__icecream-pic {
+      width: 143px;
+      height: 336px;
+      left: 322px;
+      top: 80px;
+    }
+    &__girl-icecream {
+      display: block;
+      width: 190px;
+      height: 150px;
+      left: 546px;
+      top: 265px;
+    }
+  }
+
+  .hero-bio-eco {
+    position: absolute;
+    gap: 7px;
+    left: 184px;
+    top: 282px;
+    &__text {
+      display: block;
+      font-size: 8px;
+      line-height: 12px;
+    }
+    &__arrow-right {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-header__container {
+    height: 664px;
+    background-image: url('../images/hero-header/Ellipse-D.png');
+    background-position: top 54px left 517px;
+    background-size: 534px 534px;
+  }
+  .container-center {
+    width: 1200px;
+  }
+
+  .header__logo {
+    padding: 37px 0 0 16px;
+  }
+
+  .menu {
+    // display: block;
+    visibility: visible;
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: var(--brand-font-weight);
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: var(--brand-color-white);
+      transition: transform 0.5s ease-in-out;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      color: var(--brand-color-red);
+      cursor: pointer;
+      transform: translateY(-3px);
+    }
+
+    &__link--active {
+      @extend .menu__link;
+      color: var(--brand-color-red);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+      padding: 52px 141px 0px 128px;
+      align-items: center;
+      margin: 0px;
+
+      position: relative;
+      z-index: 2;
+    }
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-tools {
+    display: none;
+  }
+
+  .button {
+    padding-top: 40px;
+    &__buy {
+      width: 159px;
+      left: 1025px;
+    }
+  }
+
+  .hero-btn {
+    gap: 12px;
+    padding-left: 16px;
+
+    &__products {
+      width: 107px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+    &__products--made {
+      width: 138px;
+    }
+  }
+
+  .hero {
+    &__title {
+      font-size: 38px;
+      line-height: 44px;
+      padding: 60px 0 24px 16px;
+    }
+
+    &__title--passion {
+      font-size: 58px;
+      line-height: 53px;
+    }
+
+    &__svg-right-16 {
+      width: 72px;
+      height: 77px;
+      top: 152px;
+      left: 1112px;
+    }
+    &__svg-right-23 {
+      width: 92px;
+      height: 76px;
+      top: 244px;
+      left: 1092px;
+    }
+
+    &__milk-pic {
+      left: 16px;
+      top: 388px;
+      width: 213px;
+      height: 216px;
+    }
+
+    &__icecream-pic {
+      left: 636px;
+      top: 108px;
+    }
+    &__girl-icecream {
+      left: 880px;
+      top: 423px;
+    }
+    &__girl-icecream:hover,
+    &__girl-icecream:focus {
+      transform: scale(1.2);
+    }
+  }
+
+  .hero-bio-eco {
+    position: relative;
+    gap: 20px;
+    left: 229px;
+    top: 97px;
+
+    &__text {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero-header__container {
+    background-image: url('../images/hero-header/Ellipse-M-x2.png');
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-header__container {
+    background-image: url('../images/hero-header/Ellipse-T-x2.png');
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-header__container {
+    background-image: url('../images/hero-header/Ellipse-D-x2.png');
+  }
+}
