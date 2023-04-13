@@ -52,13 +52,6 @@
     transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-block;
   }
-  &__title-container:hover &__title-slogan-ice {
-    transform: translate(55px);
-  }
-  &__title-container:hover  &__title-slogan-made {
-    color: var(--brand-color-red);
-    transform: translate(-180px, 27px);
-  }
   &__title-motto {
     font-family: 'Titan One';
     font-size: 34px;
@@ -180,6 +173,13 @@
       line-height: 1.1379;
       letter-spacing: 0.06em;
       width: 477px;
+    }
+    &__title-container:hover &__title-slogan-ice {
+      transform: translate(55px);
+    }
+    &__title-container:hover  &__title-slogan-made {
+      color: var(--brand-color-red);
+      transform: translate(-180px, 27px);
     }
   }
 }
