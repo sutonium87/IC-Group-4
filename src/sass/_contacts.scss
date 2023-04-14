@@ -271,10 +271,40 @@
     &__container {
       min-width: 368px;
       font-size: 16px;
+      padding: 40px 40px 40px 40px;
+    }
+
+    &__crawler {
+      width: 75.1px;
+      height: 28px;
+      font-size: 16px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+
+      &--modifier {
+        width: 138px;
+        font-size: 16px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+    }
+
+    &__copy {
+      line-height: 29px;
     }
 
     &__receptive {
       max-width: 400px;
+    }
+
+    &__body {
+      line-height: 30px;
+    }
+
+    &__address {
+      line-height: 29px;
     }
 
     &__buttons-container {
