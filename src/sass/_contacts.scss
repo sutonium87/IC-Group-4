@@ -190,7 +190,44 @@
     &__container {
       min-width: 224px;
       font-size: 14px;
-      padding: 40px 32px 0px 32px;
+    }
+
+    &__crawler {
+      width: 73px;
+      height: 28px;
+      font-size: 16px;
+      margin-bottom: 32px;
+      border-radius: 6px;
+
+      &--modifier {
+        width: 138px;
+        font-size: 16px;
+      }
+    }
+
+    &__copy {
+      padding-top: 12px;
+      margin-bottom: 32px;
+      line-height: 23px;
+    }
+
+    &__body {
+      display: flex;
+      flex-direction: column;
+      margin: 32px 0px 32px 0px;
+      gap: 12px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__footer {
+      margin-top: 32px;
+    }
+
+    &__address {
+      line-height: 26px;
     }
 
     &__receptive {
