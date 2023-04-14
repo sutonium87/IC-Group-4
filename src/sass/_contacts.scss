@@ -1,8 +1,6 @@
 * {
-  font-weight: 500;
-  letter-spacing: 0.04em;
-
-  font-style: normal;
+  font-weight: var(--brand-font-weight);
+  letter-spacing: var(--brand-letter-spacing);
   font-family: 'DM Sans';
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
   --brand-color-background2: #c2e297;
