@@ -1,20 +1,12 @@
 * {
   font-weight: 500;
   letter-spacing: 0.04em;
-  line-height: 186%;
+
   font-style: normal;
   font-family: 'DM Sans';
   --transition: cubic-bezier(0.4, 0, 0.2, 1);
   --brand-color-background2: #c2e297;
   --brand-color-background3: #f0d1a5;
-}
-
-.unstyled-list {
-  list-style: none;
-}
-
-.section-spacing {
-  margin-bottom: 32px;
 }
 
 .contacts {
@@ -36,9 +28,10 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     min-width: 280px;
-    padding: 40px 40px 0px 40px;
+    padding: 40px 32px 40px 32px;
     font-size: 12px;
     transition: 0.3s ease-in-out;
+    line-height: 22px;
 
     &:hover {
       transform: translateY(-10px);
@@ -69,23 +62,30 @@
     justify-content: center;
     align-items: center;
     color: var(--brand-color-white);
-    border-radius: 6px;
+    border-radius: 4px;
     background: var(--brand-color-background3);
-    width: 90.1px;
+    width: 80px;
+    height: 16px;
+    font-size: 12px;
+    margin-bottom: 20px;
 
     &--modifier {
       background: var(--brand-color-background2);
-      width: 185px;
+      width: 130px;
+      font-size: 12px;
     }
   }
 
   &__title {
     color: var(--brand-color-black);
+    font-size: 12px;
   }
 
   &__copy {
     padding-top: 8px;
     color: var(--brand-color-gray);
+    margin-bottom: 24px;
+    line-height: 18px;
   }
 
   &__break {
@@ -95,14 +95,13 @@
   &__body {
     display: flex;
     flex-direction: column;
-    margin: 32px 0px 32px 0px;
+    margin: 24px 0px 24px 0px;
     gap: 12px;
   }
 
   &__body-section {
     display: flex;
     flex-direction: column;
-    gap: 5px;
   }
 
   &__program {
@@ -110,12 +109,13 @@
   }
 
   &__footer {
-    margin-top: 32px;
+    margin-top: 24px;
   }
 
   &__address {
     display: flex;
     flex-direction: column;
+    line-height: 18px;
 
     a {
       text-decoration: none;
