@@ -102,9 +102,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  // .gallery {
-  //     max-width: 480px;
-  // }
   .gallery__list {
     gap: 3px;
   }
@@ -124,9 +121,6 @@
 }
 
 @media (min-width: 768px) {
-  // .gallery {
-  //     // max-width: 768px;
-  // }
   .gallery__list {
     gap: 5px;
   }
@@ -148,9 +142,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  // .gallery {
-
-  // }
   .gallery__list {
     gap: 9px;
   }
