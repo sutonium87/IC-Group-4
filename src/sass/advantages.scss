@@ -4,6 +4,8 @@
 .container-advantages {
     padding-top: 40px;
     padding-bottom: 189px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .section-advantages__item{
@@ -39,7 +41,7 @@
     // padding-bottom: 32px;
     /* or 20px */
   
-    color: var(--black-text-color);
+    color: var(--brand-color-black);
   }
   
   .item__milk::before {
