@@ -1,3 +1,6 @@
+// .hidden{
+//   visibility: hidden;
+// }
 .section-about {
     background-color: var(--brand-color-pink-background);
     background-image: url(../images/mobile/mobile-sectionbg.webp);
@@ -305,41 +308,41 @@
     pointer-events: none;
   }
   
-  .section-about__modal-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    padding: 40px;
-    transform: translate(-50%, -50%) scale(1);
+  // .section-about__modal-wrapper {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   padding: 40px;
+  //   transform: translate(-50%, -50%) scale(1);
   
-    width: 60%;
-    max-height: calc(100vh - 50px);
-    overflow-y: auto;
+  //   width: 60%;
+  //   max-height: calc(100vh - 50px);
+  //   overflow-y: auto;
   
-    background: var(--bg-color-pink);
-    background-image: url(../images/mobile/mobile-product-1@2x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
+  //   background: var(--bg-color-pink);
+  //   background-image: url(../images/mobile/mobile-product-1@2x.png);
+  //   background-size: 100%;
+  //   background-repeat: no-repeat;
+  //   background-position: 70% 50%;
   
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+  //   border-radius: 4px;
+  //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  //     0px 2px 1px rgba(0, 0, 0, 0.2);
   
-    .section-about__backdrop.is-hidden & {
-      transform: translate(-50%, -50%) scale(1.2);
-    }
+  //   .section-about__backdrop.is-hidden & {
+  //     transform: translate(-50%, -50%) scale(1.2);
+  //   }
   
-    @media screen and (min-width: 320px) {
-      max-width: 400px;
-      height: 500px;
-    }
+  //   @media screen and (min-width: 320px) {
+  //     max-width: 400px;
+  //     height: 500px;
+  //   }
   
-    @media screen and (min-width: 768px) {
-      max-width: 480px;
-      max-height: 500px;
-    }
-  }
+  //   @media screen and (min-width: 768px) {
+  //     max-width: 480px;
+  //     max-height: 500px;
+  //   }
+  // }
   
   // Кнопка модального окна CLOSE
   .section-about__modal-btn {
