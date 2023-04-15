@@ -1,7 +1,6 @@
 .section-customer {
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-left: 20px;
   padding-right: 20px;
 
   @media screen and (min-width: 768px) {
@@ -13,16 +12,6 @@
     padding-right: 116px;
   }
 }
-// .customer-container {
-//   @media screen and (min-width: 768px) {
-//     padding-left: 74px;
-//     padding-right: 74px;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     padding-left: 116px;
-//     padding-right: 116px;
-//   }
-// }
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -44,8 +33,10 @@
 
 .bg-container {
   width: 100%;
+  max-width: 986px;
   background-color: rgb(250, 250, 250);
   padding: 43px 50px 26px 50px;
+  margin: 0 auto;
 }
 
 .article-img {
