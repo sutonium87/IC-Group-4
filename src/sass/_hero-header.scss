@@ -16,11 +16,8 @@ button {
   background-color: var(--brand-color-pink-dark);
   &__container {
     height: 502px;
-    // padding: 0px 20px;
-    // background-color: black;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
     gap: 0px;
   }
 }
@@ -34,13 +31,10 @@ button {
     position: relative;
     padding-top: 8px;
     padding-left: 20px;
-    // background-color: aquamarine;
   }
   &__logo {
-    // padding: 8px 0 0 20px;
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0;
-    // background-color: blue;
   }
   &__logo:hover,
   &__logo:focus {
@@ -50,14 +44,12 @@ button {
 
 .menu {
   display: none;
-  // visibility: hidden;
 }
 
 .menu-toggle {
   background-color: Transparent;
   left: 280px;
   top: 27px;
-  // position: absolute;
   border: 0;
   cursor: pointer;
 }
@@ -67,14 +59,12 @@ button {
   justify-content: space-between;
   position: absolute;
   right: 20px;
-  // background-color: chartreuse;
 }
 
 .button {
   &__buy {
     width: 159px;
     height: 44px;
-    // position: absolute;
     background: var(--brand-color-white);
     border-radius: 22px;
     font-family: 'DM Sans';
@@ -112,7 +102,6 @@ button {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
-  // background-color: cadetblue;
 }
 
 .hero-btn {
@@ -121,11 +110,8 @@ button {
   padding: 0px;
   position: relative;
   z-index: 1;
-  // background-color: brown;
 
   &__products {
-    // width: 62.4px;
-    // height: 24px;
     background: var(--brand-color-red);
     border-radius: 20px;
     font-family: 'DM Sans';
@@ -169,7 +155,6 @@ button {
     background-position: bottom 110px right 200%;
     background-size: 346px 344px;
     background-repeat: no-repeat;
-    // background-color: blue;
     display: flex;
   }
   &__container-left {
@@ -177,8 +162,6 @@ button {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
-    // background-color: aqua;
-    // position: absolute;
     margin-top: 136px;
     margin-left: 20px;
   }
@@ -187,8 +170,6 @@ button {
 
     position: relative;
     z-index: 1;
-    // width: 300px;
-    // padding: 79px 0 20px 20px;
     transition: color 1500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -212,9 +193,6 @@ button {
 
   &__svg-right-16 {
     display: none;
-    // position: absolute;
-    // top: 152px;
-    // left: 1112px;
     cursor: pointer;
 
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -227,9 +205,6 @@ button {
 
   &__svg-right-23 {
     display: none;
-    // position: absolute;
-    // top: 244px;
-    // left: 1092px;
     cursor: pointer;
 
     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -240,10 +215,6 @@ button {
   }
 
   &__milk-pic {
-    // display: none;
-    // position: absolute;
-    // left: 16px;
-    // top: 388px;
     cursor: pointer;
   }
 
@@ -255,20 +226,15 @@ button {
   }
 
   &__girl-icecream {
-    // display: none;
-    // position: absolute;
-    // left: 880px;
-    // top: 423px;
     display: flex;
     cursor: pointer;
     margin-bottom: 0px;
     transition: transform 3000ms cubic-bezier(0.4, 0, 0.2, 1);
-    // background-color:aqua;
-  }
   &__girl-icecream:hover,
   &__girl-icecream:focus {
     transform: scale(1.5);
   }
+}
 }
 
 .hero-bio-eco {
@@ -315,7 +281,6 @@ button {
 @media screen and (min-width: 768px) {
   .header__container {
     padding: 0px;
-    // background-color: aqua;
   }
   .button__buy {
     display: flex;
@@ -325,7 +290,6 @@ button {
     justify-content: space-between;
     gap: 32px;
     right: 0px;
-    // background-color: brown;
   }
   .hero-header__container {
     height: 427px;
@@ -340,14 +304,11 @@ button {
     background-size: 335px 333px;
     background-repeat: no-repeat;
     justify-content: space-between;
-    // background-color: black;
   }
   .hero__container-right {
     display: flex;
     justify-content: space-between;
     height: 342px;
-    // gap: 70px;
-    // background-color: aqua;
   }
   .hero__container-left {
     display: flex;
@@ -358,10 +319,8 @@ button {
     margin-top: 20px;
     height: 325px;
     margin-left: 0px;
-    // background-color: brown;
   }
   .menu {
-    // display: none;
     visibility: hidden;
   }
   .menu-toggle {
@@ -392,7 +351,6 @@ button {
     display: flex;
     gap: 8px;
     padding-left: 0;
-    // background-color: blueviolet;
 
     &__products {
       font-size: 8px;
@@ -405,13 +363,11 @@ button {
       display: flex;
       align-items: center;
       margin-bottom: 16px;
-      // background-color: chartreuse;
     }
     &__title {
       font-size: 22px;
       line-height: 25px;
       padding: 0;
-      // background-color: green;
     }
     &__title--passion {
       font-size: 34px;
@@ -424,24 +380,16 @@ button {
       align-items: flex-end;
       gap: 16px;
       margin-top: 16px;
-      // background-color: blueviolet;
     }
     &__svg-right-16 {
       display: block;
-      // left: 693px;
-      // top: 92px;
     }
     &__svg-right-23 {
       display: block;
-      // left: 685px;
-      // top: 152px;
     }
 
     &__milk-pic {
       display: block;
-      // left: 32px;
-      // top: 246px;
-      // background-color: aquamarine;
     }
 
     &__icecream-pic {
@@ -449,34 +397,21 @@ button {
       height: 336px;
       left: 10%;
       top: 91px;
-      // background-color: red;
     }
     &__girl-icecream {
       display: flex;
-      // background-color: blue;
-      // display: block;
-      // width: 190px;
-      // height: 150px;
-      // left: 546px;
-      // top: 265px;
-      // background-color: blue;
     }
   }
 
   .hero-bio-eco {
-    // position: absolute;
     gap: 7px;
-    // left: 184px;
-    // top: 282px;
     &__text {
       display: block;
       font-size: 8px;
       line-height: 12px;
-      // background-color: brown;
     }
     &__arrow-right {
       display: block;
-      // background-color: blue;
     }
   }
 }
@@ -492,19 +427,11 @@ button {
       display: flex;
       justify-content: flex-start;
       gap: 128px;
-      // background-color: black;
-    }
-    &__logo {
-      // background-color: aqua;
     }
   }
   .menu {
     display: flex;
     visibility: visible;
-    // background-color: brown;
-  }
-  .buttons-container {
-    // background-color: aqua;
   }
   .menu {
     &__item {
@@ -540,7 +467,6 @@ button {
       display: flex;
       flex-direction: row;
       gap: 35px;
-      // padding: 52px 141px 0px 128px;
       align-items: center;
       margin: 0px;
 
@@ -563,27 +489,19 @@ button {
     background-size: 534px 534px;
     background-repeat: no-repeat;
     justify-content: space-between;
-    // background-color: chartreuse;
-    // padding-bottom: 0px;
   }
   .hero__container-right{
     display: flex;
     justify-content: space-between;
     height: 100%;
     bottom: 0px;
-    // background-color: aqua;
   }
   .hero__container-left{
-    // background-color: aquamarine;
     margin-top: 60px;
-  }
-  .hero__title{
-    // background-color: black;
   }
   .hero__bio-container{
     margin-top: 40px;
     padding-bottom: 60px;
-    // background-color: blue;
   }
   .hero-btn {
     gap: 12px;
@@ -596,7 +514,6 @@ button {
   }
   .hero__svg-container{
     margin-top: 68px;
-    // background-color: burlywood;
   }
   .hero {
     &__icecream-pic {
@@ -604,7 +521,6 @@ button {
       height: 557px;
       left: 17%;
       top: 107px;
-      // background-color: red;
     }
     &__title {
       font-size: 38px;
@@ -620,14 +536,10 @@ button {
     &__svg-right-16 {
       width: 72px;
       height: 77px;
-      // top: 152px;
-      // left: 1112px;
     }
     &__svg-right-23 {
       width: 92px;
       height: 76px;
-      // top: 244px;
-      // left: 1092px;
     }
 
     &__milk-pic {
@@ -636,7 +548,6 @@ button {
     }
     &__girl-icecream {
       display: flex;
-      // background-color: red;
     }
     &__girl-icecream:hover,
     &__girl-icecream:focus {
@@ -647,8 +558,6 @@ button {
   .hero-bio-eco {
     position: relative;
     gap: 20px;
-    // left: 229px;
-    // top: 97px;
 
     &__text {
       font-size: 14px;
