@@ -255,23 +255,7 @@ button {
     font-size: 14px;
     line-height: 140%;
     color: var(--brand-color-white);
-
-    // animation: 3s anim-flipX ease infinite;
   }
-  // @keyframes anim-flipX {
-  //   0% {
-  //     opacity: 0;
-  //     transform: rotateX(90def);
-  //   }
-  //   50% {
-  //     opacity: 1;
-  //     transform: rotateX(720deg);
-  //   }
-  //   100% {
-  //     opacity: 1;
-  //     transform: rotateX(720deg);
-  //   }
-  // }
 }
 .hero__container-right,
 .hero__bio-container {
@@ -280,7 +264,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding: 0px !important;
+    padding: 0px;
   }
   .button__buy {
     display: flex;
