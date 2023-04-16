@@ -602,12 +602,8 @@ button {
   }
 
   &__button {
-    width: 209px;
-    height: 44px;
-
     background: var(--brand-color-white);
     border-radius: 22px;
-
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: var(--brand-font-weight);
@@ -617,13 +613,10 @@ button {
     align-items: center;
     text-align: center;
     color: var(--brand-color-red);
-
-    padding: 0px 0 0 60px;
+    padding: 0px 0 0 60px !important;
     border-width: 0px;
-
     margin-left: 20px;
     margin-bottom: 19px;
-
     transition: transform 0.3s ease-in-out;
   }
 
@@ -652,7 +645,7 @@ button {
     display: flex;
     align-items: center;
     height: 42px;
-    padding-left: 20px;
+    padding-left: 20px !important;
     border: 1px solid #e18298;
   }
 
