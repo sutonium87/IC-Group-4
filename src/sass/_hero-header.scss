@@ -280,7 +280,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding: 0px;
+    padding: 0px !important;
   }
   .button__buy {
     display: flex;
@@ -350,7 +350,7 @@ button {
   .hero-btn {
     display: flex;
     gap: 8px;
-    padding-left: 0;
+    padding-left: 0 !important;
 
     &__products {
       font-size: 8px;
