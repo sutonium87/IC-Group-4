@@ -163,7 +163,7 @@ button {
     align-items: flex-start;
     gap: 20px;
     margin-top: 136px;
-    margin-left: 20px;
+    margin-left: 20px !important;
   }
   &__title {
     @extend %hero-title-styles;
